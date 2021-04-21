@@ -9,9 +9,6 @@ import {
 import fetchGraphQL from "../graphql/fetchGraphQL";
 
 function fetchRelay<T>(params: RequestParameters, variables: Variables): Promise<T> {
-  console.log(
-    `fetching query ${params?.name} with ${JSON.stringify(variables)}`
-  );
   return fetchGraphQL(params.text, variables);
 }
 

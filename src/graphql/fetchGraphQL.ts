@@ -1,15 +1,15 @@
 import { Variables } from "relay-runtime";
 
+const url = "https://graphqlzero.almansi.me/api";
+
 async function fetchGraphQL<T>(
   text: string | undefined | null,
   variables: Variables
 ): Promise<T> {
-  const REACT_APP_GITHUB_AUTH_TOKEN = process.env.REACT_APP_GITHUB_AUTH_TOKEN;
 
-  const response = await fetch("https://api.github.com/graphql", {
+  const response = await fetch(url, {
     method: "POST",
     headers: {
-      Authorization: `bearer ${REACT_APP_GITHUB_AUTH_TOKEN}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({

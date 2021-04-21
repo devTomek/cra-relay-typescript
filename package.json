@@ -1,5 +1,5 @@
 {
-  "name": "cra-relay-typescript",
+  "name": "relay-posts",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
@@ -8,6 +8,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-relay": "^11.0.1",
+    "react-router-dom": "^5.2.0",
     "relay-runtime": "^11.0.1"
   },
   "devDependencies": {
@@ -15,6 +16,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-relay": "^11.0.1",
+    "@types/react-router-dom": "^5.1.7",
     "@types/relay-runtime": "^11.0.0",
     "babel-plugin-relay": "^11.0.1",
     "graphql": "^15.5.0",
